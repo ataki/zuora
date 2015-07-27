@@ -57,7 +57,7 @@ module Zuora::Objects
         :invoice_date => Proc.new { Date.today }
       )
 
-      defer :body
+      defer :body, :bill_run_id
     end
   end
 end
