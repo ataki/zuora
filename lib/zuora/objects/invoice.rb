@@ -47,6 +47,9 @@ module Zuora::Objects
         :updated_by_id,
         :updated_date
       )
+      write_only(
+        :regenerate_invoice_pdf
+      )
       defaults(
         :includes_one_time => true,
         :includes_recurring => true,
